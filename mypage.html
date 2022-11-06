@@ -1,0 +1,527 @@
+<link
+  href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  rel="stylesheet"
+  id="bootstrap-css"
+/>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3"
+    />
+    <title>My page</title>
+    <script
+    type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c6b095847136c1a5ede284bf6f34083a"
+  ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style12.css" />
+  </head>
+
+  <body>
+    <div class="page-wrapper chiller-theme toggled">
+      <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+        <i class="fas fa-bars"></i>
+      </a>
+      <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+          <div class="sidebar-brand">
+            <a href="#">my page</a>
+            <div id="close-sidebar">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <div class="sidebar-header">
+            <div class="user-pic">
+              <img
+                class="img-responsive img-rounded"
+                src="img/mypage/Myongji_ui.gif"
+                alt="User picture"
+              />
+              <img
+              class="img-responsive img-rounded"
+              src="img/mypage/Myongji_ui2.gif"
+              alt="User picture"
+            />
+            </div>
+            <div class="user-info">
+              <span class="user-name">
+                <strong>이유빈</strong>
+              </span>
+              <span class="user-role">Administrator</span>
+              <hr />
+              <span class="user-name">
+                <strong>이유빈</strong>
+              </span>
+              <span class="user-role">Administrator</span>
+              <!-- <span class="user-status">
+            <i class="fa fa-circle"></i>
+            <span>Online</span>
+          </span> -->
+            </div>
+          </div>
+          <!-- sidebar-header  -->
+          <div class="sidebar-search">
+            <div>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control search-menu"
+                  placeholder="Search..."
+                />
+                <div class="input-group-append">
+                  <span class="input-group-text">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- sidebar-search  -->
+          <div class="sidebar-menu">
+            <ul>
+              <li class="header-menu">
+                <span>General</span>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fa fa-tachometer-alt"></i>
+                  <span>Dashboard</span>
+                  <!-- <span class="badge badge-pill badge-warning">New</span> -->
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        >Dashboard 1
+                        <!-- <span class="badge badge-pill badge-success">Pro</span> -->
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">Dashboard 2</a>
+                    </li>
+                    <li>
+                      <a href="#">Dashboard 3</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fa fa-shopping-cart"></i>
+                  <span>E-commerce</span>
+                  <span class="badge badge-pill badge-danger">3</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">Products </a>
+                    </li>
+                    <li>
+                      <a href="#">Orders</a>
+                    </li>
+                    <li>
+                      <a href="#">Credit cart</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="far fa-gem"></i>
+                  <span>Components</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">General</a>
+                    </li>
+                    <li>
+                      <a href="#">Panels</a>
+                    </li>
+                    <li>
+                      <a href="#">Tables</a>
+                    </li>
+                    <li>
+                      <a href="#">Icons</a>
+                    </li>
+                    <li>
+                      <a href="#">Forms</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fa fa-chart-line"></i>
+                  <span>Charts</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">Pie chart</a>
+                    </li>
+                    <li>
+                      <a href="#">Line chart</a>
+                    </li>
+                    <li>
+                      <a href="#">Bar chart</a>
+                    </li>
+                    <li>
+                      <a href="#">Histogram</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fa fa-globe"></i>
+                  <span>Maps</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">Google maps</a>
+                    </li>
+                    <li>
+                      <a href="#">Open street map</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- <li class="header-menu">
+            <span>Extra</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-book"></i>
+              <span>Documentation</span>
+              <span class="badge badge-pill badge-primary">Beta</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-calendar"></i>
+              <span>Calendar</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-folder"></i>
+              <span>Examples</span>
+            </a>
+          </li> -->
+            </ul>
+          </div>
+          <!-- sidebar-menu  -->
+        </div>
+        <!-- sidebar-content  -->
+        <div class="sidebar-footer">
+          <a href="#">
+            <i class="fa fa-bell"></i>
+            <span class="badge badge-pill badge-warning notification">3</span>
+          </a>
+          <a href="#">
+            <i class="fa fa-envelope"></i>
+            <span class="badge badge-pill badge-success notification">7</span>
+          </a>
+          <a href="#">
+            <i class="fa fa-cog"></i>
+            <span class="badge-sonar"></span>
+          </a>
+          <a href="#">
+            <i class="fa fa-power-off"></i>
+          </a>
+        </div>
+      </nav>
+      
+      <!-- sidebar-wrapper  -->
+      <main class="page-content">
+        <div class="container-fluid">
+          <span style="color:#3f55e4 ;"><h2>Pro Sidebar</h2> </span>
+
+          <hr />
+          <div class="row">
+            <div class="form-group col-md-12">
+              <p>
+                This is a responsive sidebar template with dropdown menu based
+                on bootstrap 4 framework.
+              </p>
+              <p>
+                You can find the complete code on
+                <a
+                  href="https://github.com/azouaoui-med/pro-sidebar-template"
+                  target="_blank"
+                >
+                  Github</a
+                >, it contains more themes and background image option
+              </p>
+            </div>
+            <div class="form-group col-md-12">
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=star&count=true&size=small"
+                frameborder="0"
+                scrolling="0"
+                width="90px"
+                height="30px"
+              ></iframe>
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=fork&count=true&size=small"
+                frameborder="0"
+                scrolling="0"
+                width="90px"
+                height="30px"
+              ></iframe>
+            </div>
+            <div class="form-group col-md-12">
+              <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">New !</h4>
+                <p>
+                  New react pro sidebar library is now available on
+                  <a
+                    href="https://www.npmjs.com/package/react-pro-sidebar"
+                    target="_blank"
+                    >npm</a
+                  >
+                  <a
+                    href="https://github.com/azouaoui-med/react-pro-sidebar"
+                    target="_blank"
+                  >
+                    <img
+                      alt="GitHub stars"
+                      src="https://img.shields.io/github/stars/azouaoui-med/react-pro-sidebar?style=social"
+                    />
+                  </a>
+                </p>
+                <a
+                  href="https://github.com/azouaoui-med/react-pro-sidebar"
+                  target="_blank"
+                  class="btn btn-sm btn-primary mr-2"
+                >
+                  Github</a
+                >
+                <a
+                  href="https://azouaoui-med.github.io/react-pro-sidebar"
+                  target="_blank"
+                  class="btn btn-sm btn-success"
+                >
+                  Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <h5>More templates</h5>
+          <hr />
+          <div class="container-fluid non-scrollable-menu">
+            <div class="row">
+          
+          
+              <!-- 좌측 메뉴 -->
+              <div class="sub-menu col-xs-4 col-md-3">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control search-menu"
+                    placeholder="장소를 입력하세요"
+                  />
+                </div>
+
+              
+                <!-- 플래너 정보 출력 -->
+                <b>                
+                  <ul class="plan-info list-group" style="margin-bottom: 0;">
+                  <li class="list-group-item">
+                    <h3>부산여행</h3>
+                    <span>여행 시작일: 2022-12-31</span><br>
+                    <span>인원: 2</span>
+                    <!-- <span>아이디: ${article.m_id }</span>
+                    <span>플래너코드: ${article.plan_code }</span> -->
+                  </li>
+                </ul>
+              </b>
+
+                <!-- 플래너 루트 리스트 -->
+			<div class="scrollable-menu">
+				<ul class="root-info list-group"  id="ul">
+					<!-- 저장된 도시계획 리스트 -->
+					<c:forEach var="cp" items="${cplist }">
+					<li class="list-group-item" id="cityli">
+						
+						<!-- <%-- <!-- 이동일 계산 -->
+						
+						<!-- 하루 단위 숫자 -->
+						<fmt:parseNumber var="dayUnit" value="${1000*60*60*24 }" /> 
+						<!-- 시작일 -->
+						<c:set var="s_date" value="${fn:substring(cp.s_date, 0,10)}" property="time" />
+						<fmt:parseDate var="s_date" value="${s_date}" pattern="yyyy-MM-dd" /> <!-- String to Date -->
+						<!-- 최종 포맷 -->
+						<fmt:formatDate var="s_date" value="${s_date}" pattern="yyyy-MM-dd"  /> <!-- Date to String -->
+						<fmt:formatDate var="e_date" value="${e_date}" pattern="yyyy-MM-dd" /> <!-- Date to String -->
+						
+						<!-- 이동일 계산 --%> -->
+						
+						<!-- <h3 class="root-city" id="ct_name">${cp.city.ct_name }</h3> 
+						<span class="root-day">
+						<select id="day" class="daySelector" onchange="changeCP()">
+							<c:forEach var="i" begin="1" end="10" step="1">
+						        <c:choose>
+									<c:when test="${i eq cp.day }">
+								        <option value="${i}" selected>2</option>
+									</c:when>						
+									<c:otherwise>									
+								        <option value="${i}">3</option>
+									</c:otherwise>
+								</c:choose>
+							</c:forEach>
+			    		</select>박&nbsp; -->
+						<!-- </span>
+				   <%-- <span class="root-date">${fn:substring(s_date, 5,10)} ~ </span>  --%> -->
+						<!-- <span class="root-date">${fn:substring(cp.s_date,0,10)} ~ </span><br />
+						<span class="root-transport">
+						<select id="trans">
+							<c:set var="array">기차,항공,버스,페리,기타</c:set>
+							
+							<c:forEach var="item" items="${array}" varStatus="idx">
+								<c:choose>
+									<c:when test="${cp.trans eq item  }">
+							        	<option value="${item}" selected>${item}</option>
+									</c:when>
+									<c:otherwise>									
+								        <option value="${item }">${item }</option>
+									</c:otherwise>
+								</c:choose>							 
+							</c:forEach> 
+					    </select>						
+						</span>
+						<span id="ct_code" style="display: none;">${cp.ct_code }</span> -->
+						
+						<!-- <c:choose>
+							<c:when test="${cp.rm_ok eq 'Y'  }">
+								<span>동행추천허용<input type="checkbox" id="rm_ok" checked></span>						
+							</c:when>
+							<c:otherwise>									
+								<span>동행추천허용<input type="checkbox" id="rm_ok"></span>												
+							</c:otherwise>
+						</c:choose>&nbsp;
+						<span id="lat" style="display: none;">${cp.city.lat }</span>
+						<span id="lng" style="display: none;">${cp.city.lng }</span>
+						<span id="cp_code" style="display: none;" value="${cp.cp_code }">${cp.cp_code }</span> -->
+						<!-- <button onclick="delCP(this)">제거</button> -->
+					</li>
+          </c:forEach>
+        </ul>
+              </div>
+            </div>
+          		<!-- 우측 컨텐츠 -->
+		<div class="row-fluid col-xs-8 col-md-9">
+		
+			<!-- 상단 메뉴 -->
+			<div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
+				<a href="${pageContext.request.contextPath}/plan/plan.do?plan_code=${article.plan_code}" class="btn btn-primary" role="button">루트</a>
+				<a href="${pageContext.request.contextPath}/plan/calendar.do?plan_code=${article.plan_code}" class="btn btn-default" role="button">일정</a> 
+				<a class="btn btn-default" role="button"></a>
+				<c:choose>
+					<c:when test="${session_m_id!=null}">	<!-- 로그인 시 -->
+					<a href="javascript:creatcp('${article.plan_code}');" class="btn btn-success" role="button">저장</a>
+<!-- 
+					<%-- ${pageContext.request.contextPath}/plan/create.do?plan_code=${article.plan_code} --%>
+					<a href="${pageContext.request.contextPath}/plan/course.do?plan_code=${article.plan_code}" class="btn btn-info" role="button">다음단계로</a>
+<%-- 					<a href="${pageContext.request.contextPath}/plan/course.do?plan_code=${article.plan_code}" class="btn btn-info" role="button" onclick="creatcp('${article.plan_code}');">다음단계로</a> --%>
+					</c:when> -->
+					<c:when test="${empty session_m_id}">	<!-- 비회원일 시 -->
+					<a class="btn btn-default" role="button"></a>
+					<!-- <a href="#loginmodal" class="btn btn-danger" role="button">
+						<span class="glyphicon glyphicon-lock"></span>&nbsp;비회원으로 작업중
+					</a>
+					</c:when> -->
+				</c:choose>
+			</div>
+                    
+          <script src="src/componets/views/Landing/Sections/MapContainer.js"></script>
+          <div id="map" style="width: 500px; height: 400px"></div>
+          <script>
+            var container = document.getElementById("map");
+            var options = {
+              center: new kakao.maps.LatLng(37.224650469991, 127.18758354347),
+              level: 3,
+            };
+
+            var map = new kakao.maps.Map(container, options);
+          </script>
+          
+          <!-- <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="card rounded-0 p-0 shadow-sm">
+            <img src="https://user-images.githubusercontent.com/25878302/58369568-a49b2480-7efc-11e9-9ca9-2be44afacda1.png" class="card-img-top rounded-0" alt="Angular pro sidebar">
+            <div class="card-body text-center">
+              <h6 class="card-title">Angular Pro Sidebar</h6>
+              <a href="https://github.com/azouaoui-med/angular-pro-sidebar" target="_blank" class="btn btn-primary btn-sm">Github</a>
+              <a href="https://azouaoui-med.github.io/angular-pro-sidebar/demo/" target="_blank" class="btn btn-success btn-sm">Preview</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="card rounded-0 p-0 shadow-sm">
+            <img src="https://user-images.githubusercontent.com/25878302/58369258-33f20900-7ef8-11e9-8ff3-b277cb7ed7b4.PNG" class="card-img-top rounded-0" alt="Angular pro sidebar">
+            <div class="card-body text-center">
+              <h6 class="card-title">Angular Dashboard</h6>
+              <a href="https://github.com/azouaoui-med/lightning-admin-angular" target="_blank" class="btn btn-primary btn-sm">Github</a>
+              <a href="https://azouaoui-med.github.io/lightning-admin-angular/demo/" target="_blank" class="btn btn-success btn-sm">Preview</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+          <hr />
+
+          <!-- <footer class="text-center">
+        <div class="mb-2">
+          <small>
+            © 2020 made with <i class="fa fa-heart" style="color:red"></i> by - <a target="_blank" rel="noopener noreferrer" href="https://azouaoui.netlify.com">
+              Mohamed Azouaoui
+            </a>
+          </small>
+        </div>
+        <div>
+          <a href="https://github.com/azouaoui-med" target="_blank">
+            <img alt="GitHub followers" src="https://img.shields.io/github/followers/azouaoui-med?label=github&style=social" />
+          </a>
+          <a href="https://twitter.com/azouaoui_med" target="_blank">
+            <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/azouaoui_med?label=twitter&style=social" />
+          </a>
+        </div>
+      </footer> -->
+        </div>
+      </main>
+      <!-- page-content" -->
+    </div>
+    <!-- page-wrapper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/mypage.js"></script>
+  </body>
+</html>
